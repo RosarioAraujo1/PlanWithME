@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.applicationId = "planWithme"
             configuration.server = "https://planwithme.herokuapp.com/parse"
         })
-      )
+    )
         return true
     }
 

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E7D2E4363A736B12C42D2C4 /* libPods-PlanWithMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69093F416B8A0AAC6E5BE557 /* libPods-PlanWithMe.a */; };
 		1A63663624CD43C70086D011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63663524CD43C70086D011 /* AppDelegate.swift */; };
 		1A63663824CD43C70086D011 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63663724CD43C70086D011 /* SceneDelegate.swift */; };
 		1A63663A24CD43C70086D011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63663924CD43C70086D011 /* ViewController.swift */; };
 		1A63663D24CD43C70086D011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A63663B24CD43C70086D011 /* Main.storyboard */; };
 		1A63663F24CD43C70086D011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A63663E24CD43C70086D011 /* Assets.xcassets */; };
 		1A63664224CD43C70086D011 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A63664024CD43C70086D011 /* LaunchScreen.storyboard */; };
+		3E48AEC43C4B455CE8577650 /* Pods_PlanWithMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA7DEF5FD486748540616F1 /* Pods_PlanWithMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		1A63664124CD43C70086D011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A63664324CD43C70086D011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303F43BB2DC304714822E4F2 /* Pods-PlanWithMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanWithMe.debug.xcconfig"; path = "Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe.debug.xcconfig"; sourceTree = "<group>"; };
+		3EA7DEF5FD486748540616F1 /* Pods_PlanWithMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanWithMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8B133EFDBA841671F30971 /* Pods-PlanWithMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanWithMe.release.xcconfig"; path = "Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe.release.xcconfig"; sourceTree = "<group>"; };
-		69093F416B8A0AAC6E5BE557 /* libPods-PlanWithMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanWithMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7D2E4363A736B12C42D2C4 /* libPods-PlanWithMe.a in Frameworks */,
+				3E48AEC43C4B455CE8577650 /* Pods_PlanWithMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 		4E68A746B4A146BF7E79258E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				69093F416B8A0AAC6E5BE557 /* libPods-PlanWithMe.a */,
+				3EA7DEF5FD486748540616F1 /* Pods_PlanWithMe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 				1A63662E24CD43C70086D011 /* Sources */,
 				1A63662F24CD43C70086D011 /* Frameworks */,
 				1A63663024CD43C70086D011 /* Resources */,
-				7CF976AE91FC339332C2D9CC /* [CP] Copy Pods Resources */,
+				D57938BFE91C8F649CE9A02B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,23 +161,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7CF976AE91FC339332C2D9CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		80F452C437BBB8A2B8810ABE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +181,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57938BFE91C8F649CE9A02B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlanWithMe/Pods-PlanWithMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
