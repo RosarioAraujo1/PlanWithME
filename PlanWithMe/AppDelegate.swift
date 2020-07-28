@@ -11,16 +11,19 @@ import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
 
-    //parse-dashboard --appId planWithme --masterKey myMasterKey --serverURL //"https://planwithme.herokuapp.com/parse"
 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         Parse.initialize(
-        with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
-            configuration.applicationId = "planWithme"
-            configuration.server = "https://planwithme.herokuapp.com/parse"
-        })
-    )
+                with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+                    configuration.applicationId = "planWithMe"
+                    configuration.server = "http://planwithme.herokuapp.com/parse"
+                })
+            )
         return true
     }
 
